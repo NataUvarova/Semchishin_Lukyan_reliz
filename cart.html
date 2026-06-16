@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваш Кошик — Toyota</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cart-layout { display: flex; flex-direction: column; gap: 30px; }
+        .cart-items { flex: 2; }
+        .cart-item { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #c0c4ff; padding: 15px 0; gap: 15px; }
+        .cart-item img { width: 80px; height: auto; }
+        .checkout-form { flex: 1; background-color: #f9f9f9; padding: 25px; border-radius: 8px; border: 1px solid #eeeeee; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: 600; font-size: 14px; }
+        .form-group input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        @media (min-width: 768px) {
+            .cart-layout { flex-direction: row; }
+        }
+    </style>
+</head>
+<body>
+
+   <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <!-- Замініть на реальне лого компанії з image_d78abc.png -->
+                <div class="logo-placeholder"><img src="assets/logo.png"></div>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Нові авто</a>
+                <a href="buyers.html">Покупцям</a>
+                <a href="business.html">Тойота для бізнесу</a>
+            </nav>
+            <div class="header-action">
+                <a href="test-drive.html" class="btn-sale">тест-драйв</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="content-container">
+        <h1 class="main-title">Обрані автомобілі</h1>
+
+        <div class="cart-layout">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="assets/card2.png" alt="RAV4">
+                    <div>
+                        <h4 style="color: #4141d6;">Toyota RAV4</h4>
+                        <p style="font-size: 13px; color: #777;">Комплектація: Lounge</p>
+                    </div>
+                    <span style="font-weight: bold; color: #ff4d4d;">1 629 450₴</span>
+                </div>
+            </div>
+
+            <div class="checkout-form">
+                <h3>Оформити заявку</h3>
+                <p style="font-size: 13px; color: #666; margin-bottom: 15px;">Менеджер зв'яжеться з вами для обговорення умов купівлі.</p>
+                <form>
+                    <div class="form-group">
+                        <label>Ваше Ім'я</label>
+                        <input type="text" placeholder="Іван Іванов" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Телефон</label>
+                        <input type="tel" placeholder="+380" required>
+                    </div>
+                    <button type="submit" style="width:100%; background-color:#4141d6; color:white; padding:12px; border:none; border-radius:4px; font-weight:bold; cursor:pointer;">
+                        Надіслати запит
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    </body>
+</html>

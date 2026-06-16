@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Технічне обслуговування — Гранд Мотор Хмельницький</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-placeholder"><img src="assets/logo.png" alt="Toyota Logo"></div>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Нові авто</a>
+                <a href="buyers.html">Покупцям</a>
+                <a href="business.html">Тойота для бізнесу</a>
+            </nav>
+            <div class="header-action">
+                <a href="test-drive.html" class="btn-sale">тест-драйв</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <h1 class="main-title">Технічне обслуговування Toyota</h1>
+        
+        <p class="service-intro-text">
+            Тойота Центр Хмельницький «Гранд Мотор» - це не лише продаж автомобілів, а й офіційний сертифікований сервіс для технічного обслуговування та ремонту Toyota і Lexus, як у період гарантії, так і після її завершення. Ми дбаємо про кожного клієнта, тому гарантуємо: якість робіт, оригінальні запчастини з гарантією, сучасне обладнання, прозорість процесу обслуговування.
+        </p>
+
+        <section class="service-advantages">
+            <h2>Чому варто обрати офіційний сервіс "Гранд Мотор"?</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="adv-icon">🛡️</div>
+                    <h3>Гарантія якості</h3>
+                    <p>3 роки або 100 000 км від виробника. Оригінальні запчастини з гарантією (1 рік без обмеження пробігу).</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="adv-icon">🚀</div>
+                    <h3>Підтримка та Обладнання</h3>
+                    <p>Підтримка Toyota Assistance по Україні та Європі. Надсучасне обладнання – найкраще у регіоні (ROTARY, MAHA, CORGHI, TOYOTA).</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="adv-icon">☕</div>
+                    <h3>Комфорт та Прозорість</h3>
+                    <p>Зона відпочинку з кавою, Wi-Fi, ТБ, PlayStation. Обслуговування у полі зору – ви можете спостерігати за процесом.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section class="service-booking">
+            <div class="booking-container">
+                
+                <div class="booking-info">
+                    <h2>Онлайн-запис на сервіс</h2>
+                    <p>Запишіться на сервіс прямо зараз – зателефонуйте нам або залиште заявку онлайн, щоб обрати зручний день і час.</p>
+                    
+                    <div class="intervals-info">
+                        <h3>Регламент ТО:</h3>
+                        <ul>
+                            <li>Кожні <strong>15 000 км</strong> або <strong>12 місяців</strong> (що настане раніше).</li>
+                            <li>Для важких умов експлуатації — кожні 7 500 км або 6 місяців.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="booking-form-wrapper">
+                    <form action="#" method="POST" class="service-form">
+                        <div class="form-group">
+                            <label for="car-model">Оберіть модель автомобіля</label>
+                            <select id="car-model" name="car_model" required>
+                                <option value="">-- Оберіть модель --</option>
+                                <option value="corolla">Toyota Corolla</option>
+                                <option value="rav4">Toyota RAV4</option>
+                                <option value="prado">Land Cruiser Prado</option>
+                                <option value="hilux">Hilux</option>
+                                <option value="lc300">Land Cruiser 300</option>
+                                <option value="proace">Proace City Verso</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mileage">Поточний пробіг (км)</label>
+                            <input type="number" id="mileage" name="mileage" placeholder="Наприклад: 30000" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="client-name">Ваше ім'я</label>
+                            <input type="text" id="client-name" name="client_name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="client-phone">Номер телефону</label>
+                            <input type="tel" id="client-phone" name="client_phone" placeholder="+380" required>
+                        </div>
+
+                        <button type="submit" class="btn-submit-service">Записатись на ТО</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-links-container">
+            <div class="footer-column">
+                <h4>Автомобілі</h4>
+                <ul>
+                    <li><a href="index.html">Нові авто</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Покупцям</h4>
+                <ul>
+                    <li><a href="#">Про Toyota</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Власникам</h4>
+                <ul>
+                    <li><a href="service.html">Технічне обслуговування</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <div class="logo-placeholder small"><img src="assets/logo.png" alt="Toyota Logo Small"></div>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/user/ToyotaUkraine" class="social-icon">YT</a>
+                <a href="https://www.facebook.com/ToyotaUkraine/?locale=uk_UA" class="social-icon">FB</a>
+                <a href="https://www.instagram.com/toyota_ukraine/" class="social-icon">IG</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026
+        </div>
+    </footer>
+
+</body>
+</html>

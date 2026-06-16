@@ -1,0 +1,224 @@
+/* ==========================================
+   СТИЛІ ДЛЯ СТОРІНКИ ТЕХНІЧНОГО ОБСЛУГОВУВАННЯ
+   ========================================== */
+
+/* Загальні налаштування для контенту сервісу */
+.content-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #222;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.service-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: #e5e5e5;
+    margin: 60px 0;
+}
+
+/* 1. Блок переваг (Grid) */
+.service-advantages {
+    margin-bottom: 50px;
+}
+
+.service-advantages h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 35px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Червона лінія під заголовком у стилі Toyota */
+.service-advantages h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #eb0a1e; 
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.advantage-card {
+    background: #f8f9fa;
+    padding: 40px 30px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.advantage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-color: #ddd;
+}
+
+.adv-icon {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.advantage-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+.advantage-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* 2. Блок запису (Двоколонковий макет) */
+.booking-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    .booking-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+.booking-info h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.booking-info p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Стильний блок регламенту */
+.intervals-info {
+    background: #f8f9fa;
+    padding: 25px;
+    border-left: 4px solid #eb0a1e; /* Фірмовий червоний */
+    border-radius: 0 4px 4px 0;
+}
+
+.intervals-info h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.intervals-info ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.intervals-info li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* 3. Сучасна форма інпутів */
+.booking-form-wrapper {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    border: 1px solid #eaeaea;
+}
+
+.service-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Елегантні інпути */
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #1a1a1a;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+    border-color: #eb0a1e; /* Фокус на червоний */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(235, 10, 30, 0.1);
+}
+
+.form-group input::placeholder {
+    color: #aaa;
+}
+
+/* Велика помітна кнопка */
+.btn-submit-service {
+    width: 100%;
+    background-color: #eb0a1e;
+    color: #ffffff;
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn-submit-service:hover {
+    background-color: #b30412;
+}

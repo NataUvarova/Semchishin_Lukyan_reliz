@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota RAV4 — Деталі моделі</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Додаткові стилі суто для цієї сторінки, щоб не ламати основний CSS */
+        .car-details { display: flex; flex-direction: column; gap: 40px; margin-top: 20px; }
+        .car-hero-img { width: 100%; max-width: 600px; margin: 0 auto; }
+        .specs-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .specs-table td { padding: 12px; border-bottom: 1px solid #eeeeee; }
+        .specs-table td:first-child { font-weight: bold; color: #666; }
+        .action-block { text-align: center; margin-top: 30px; }
+        .btn-order { background-color: #ff3333; color: white; padding: 15px 30px; border: none; font-weight: bold; border-radius: 4px; cursor: pointer; text-transform: uppercase; }
+        @media (min-width: 768px) {
+            .car-details { flex-direction: row; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-placeholder"><a href="index.html"><img src="assets/logo.png" alt="Toyota"></a></div>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Нові авто</a>
+                <a href="buyers.html">Покупцям</a>
+                <a href="business.html">Тойота для бізнесу</a>
+            </nav>
+            <div class="header-action">
+                <a href="test-drive.html" class="btn-sale">тест-драйв</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <h1 class="main-title" style="text-align: left; font-style: normal; color: #333;">Toyota RAV4</h1>
+        
+        <div class="car-details">
+            <div class="car-hero-img">
+                <img src="assets/card2.png" alt="Toyota RAV4">
+            </div>
+            <div style="flex: 1;">
+                <h2>Кросовер, що диктує правила</h2>
+                <p style="margin: 15px 0; color: #555;">Toyota RAV4 поєднує в собі витончений стиль, передові гібридні технології та безкомпромісну безпеку для будь-яких доріг України.</p>
+                
+                <table class="specs-table">
+                    <tr><td>Ціна:</td><td style="color: #ff4d4d; font-weight: bold; font-size: 20px;">від 1 629 450 ₴</td></tr>
+                    <tr><td>Двигун:</td><td>2.0 Dual VVT-i / 2.5 Hybrid</td></tr>
+                    <tr><td>Потужність:</td><td>173 / 222 к.с.</td></tr>
+                    <tr><td>Привід:</td><td>Передній / Повний (AWD)</td></tr>
+                    <tr><td>КПП:</td><td>Варіатор (Direct Shift CVT / e-CVT)</td></tr>
+                </table>
+
+                <div class="action-block">
+                    <button class="btn-order">Замовити тест-драйв</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        </footer>
+</body>
+</html>

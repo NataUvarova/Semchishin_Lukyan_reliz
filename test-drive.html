@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запис на тест-драйв — Toyota</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border: 1px solid #c0c4ff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(192, 196, 255, 0.2);
+        }
+        
+        .form-description {
+            text-align: center;
+            color: #666666;
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #333333;
+            margin-bottom: 8px;
+        }
+
+        .form-group input, 
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 14px;
+            color: #333333;
+            background-color: #ffffff;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus, 
+        .form-group select:focus {
+            border-color: #4141d6;
+            outline: none;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background: linear-gradient(to right, #801a1a, #ff2a2a);
+            color: #ffffff;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: opacity 0.2s;
+            margin-top: 10px;
+        }
+
+        .btn-submit:hover {
+            opacity: 0.9;
+        }
+
+        @media (min-width: 600px) {
+            .form-row {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ШАПКА САЙТУ -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <!-- Замініть на реальне лого компанії з image_d78abc.png -->
+                <div class="logo-placeholder"><img src="assets/logo.png"></div>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Нові авто</a>
+                <a href="buyers.html">Покупцям</a>
+                <a href="business.html">Тойота для бізнесу</a>
+            </nav>
+            <div class="header-action">
+                <a href="test-drive.html" class="btn-sale">тест-драйв</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ГОЛОВНИЙ КОНТЕНТ -->
+    <main class="content-container">
+        <h1 class="main-title" style="font-style: normal; color: #333333;">Відчуйте Toyota в дії</h1>
+        <p class="form-description">Заповніть коротку форму нижче. Наш менеджер зв'яжеться з вами протягом 15 хвилин для підтвердження зручного часу зустрічі в автосалоні.</p>
+
+        <div class="form-container">
+            <form action="#" method="POST">
+                
+                <!-- Вибір авто -->
+                <div class="form-group">
+                    <label for="car-select">Оберіть модель для тест-драйву *</label>
+                    <select id="car-select" name="car_model" required>
+                        <option value="" disabled selected>-- Оберіть автомобіль --</option>
+                        <option value="corolla">Toyota Corolla</option>
+                        <option value="rav4">Toyota RAV4</option>
+                        <option value="prado">Land Cruiser Prado</option>
+                        <option value="hilux">Toyota Hilux</option>
+                        <option value="lc300">Land Cruiser</option>
+                        <option value="proace">Proace City Verso</option>
+                    </select>
+                </div>
+
+                <!-- Особисті дані (в один рядок на десктопі) -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="user-name">Ваше Ім'я *</label>
+                        <input type="text" id="user-name" name="name" placeholder="Олександр" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-phone">Номер телефону *</label>
+                        <input type="tel" id="user-phone" name="phone" placeholder="+380" required>
+                    </div>
+                </div>
+
+                <!-- Місто та Дилер -->
+                <div class="form-group">
+                    <label for="city-select">Ваше місто *</label>
+                    <select id="city-select" name="city" required>
+                        <option value="kyiv">Київ</option>
+                        <option value="lviv">Львів</option>
+                        <option value="odesa">Одеса</option>
+                        <option value="kharkiv">Харків</option>
+                        <option value="dnipro">Дніпро</option>
+                    </select>
+                </div>
+
+                <!-- Кнопка відправки -->
+                <button type="submit" class="btn-submit">Підтвердити запис</button>
+                
+            </form>
+        </div>
+    </main>
+
+    <!-- ФУТЕР САЙТУ -->
+    <footer class="main-footer">
+        <div class="footer-links-container">
+            <div class="footer-column">
+                <h4>Автомобілі</h4>
+                <ul>
+                    <li><a href="index.html">Нові авто</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Покупцям</h4>
+                <ul>
+                    <li><a href="#">Про Toyota</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Власникам</h4>
+                <ul>
+                    <li><a href="service.html">Технічне обслуговування</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <div class="logo-placeholder small"><img src="assets/logo.png" alt="Toyota Logo Small"></div>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/user/ToyotaUkraine" class="social-icon">YT</a>
+                <a href="https://www.facebook.com/ToyotaUkraine/?locale=uk_UA" class="social-icon">FB</a>
+                <a href="https://www.instagram.com/toyota_ukraine/" class="social-icon">IG</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 ТОВ «Гранд Мотор». Всі права захищені.
+        </div>
+    </footer>
+
+
+</body>
+</html>

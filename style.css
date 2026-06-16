@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ШАПКА САЙТУ */
+.main-header {
+    background: linear-gradient(to right, #801a1a, #ff2a2a);
+    padding: 10px 20px;
+    color: #ffffff;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo-placeholder {
+    background-color: #ffffff;
+    color: #111;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    font-size: 14px;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.nav-menu a:hover {
+    opacity: 0.8;
+}
+
+.btn-sale {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: lowercase;
+    display: block;
+    text-align: right;
+    max-width: 100px;
+    line-height: 1.2;
+}
+
+/* ГОЛОВНИЙ КОНТЕНТ */
+.content-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.main-title {
+    text-align: center;
+    color: #ff3333;
+    font-style: italic;
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* СІТКА КАРТОК (Мобільні спочатку: 1 стовпчик) */
+.cars-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* СТИЛІ КАРТКИ */
+.car-card {
+    border: 1px solid #c0c4ff;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.car-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(192, 196, 255, 0.3);
+}
+
+.car-image {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.car-image img {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.car-name {
+    color: #4141d6;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.car-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.car-price {
+    color: #ff4d4d;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Кнопка кошика з макету */
+.btn-cart {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #a0a5ff;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%234141d6" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>');
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.2s;
+}
+
+.btn-cart:hover {
+    background-color: #f0f2ff;
+}
+
+/* ФУТЕР САЙТУ */
+.main-footer {
+    max-width: 1200px;
+    margin: 60px auto 20px auto;
+    padding: 0 20px;
+    border-top: 1px solid #eeeeee;
+    padding-top: 40px;
+}
+
+.footer-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.footer-column ul li a {
+    font-size: 14px;
+    color: #666666;
+    transition: color 0.2s;
+}
+
+.footer-column ul li a:hover {
+    color: #ff3333;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.logo-placeholder.small {
+    padding: 10px 15px;
+    font-size: 11px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 13px;
+    color: #777777;
+    margin-top: 20px;
+}
+
+/* АДАПТИВНІ МЕДІА-ЗАПИТИ (MEDIA QUERIES) */
+
+/* Планшети (від 600px): 2 стовпчики карток, горизонтальні посилання внизу */
+@media (min-width: 600px) {
+    .cars-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-links-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Десктопи (від 900px): 3 стовпчики карток, як на оригінальному макеті */
+@media (min-width: 900px) {
+    .cars-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .main-header {
+        padding: 15px 40px;
+    }
+    
+    .header-container {
+        flex-wrap: nowrap;
+    }
+}
